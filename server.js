@@ -9,7 +9,7 @@ const users = require('./routes/users');
 
 const app = express();
 
-const port = 5000;
+const port = process.env.port || 5000;
 
 
 app.use(cors({ origin: '*' }));
