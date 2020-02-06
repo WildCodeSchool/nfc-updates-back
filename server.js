@@ -29,7 +29,7 @@ app.listen(port, () => {
 app.use((req, res, next) => {
   res.set({
     'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE,OPTIONS',
     'Access-Control-Allow-Headers': 'X-Requested-With,content-type,Authorization, access_token',
     'Access-Control-Expose-Headers': 'X-Requested-With,content-type, Authorization, access_token',
   });
